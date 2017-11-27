@@ -1,0 +1,32 @@
+body {
+
+	&.nav-active {
+		.nav-drop {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+a {
+	@include animate(color);
+
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1202px;
+	padding: 0 15px;
+}
+
+#wrapper {
+	overflow: hidden;
+	position: relative;
+}
+

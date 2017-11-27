@@ -1,0 +1,163 @@
+.resize-active {
+
+	.nav-drop {
+		transition: none !important;
+	}
+}
+
+#header {
+	position: relative;
+}
+
+.header-holder {
+	padding: 43px 0 39px;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 68px;
+	text-align: center;
+	color: #5363db;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav-drop {
+	@include animate(opacity visibility);
+
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 999;
+
+	@include media('>=desktop') {
+		opacity: 1;
+		visibility: visible;
+		position: static;
+		padding:0 0 0 28px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-active & {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.menu {
+		@extend %listreset;
+		margin: 0 -10px;
+
+		li {
+			position: relative;
+			text-align: center;
+			border-bottom: 1px solid #dedede;
+			padding: 0;
+			background: $white;
+
+			@include media('>=desktop') {
+				display: inline-block;
+				vertical-align: top;
+				border: none;
+				padding: 0px 15px;
+				background: none;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				color: #555;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.142857;
+				padding: 5px 0;
+
+				&:hover {
+					color: #5363db;
+
+					&:before {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+						width: 30px;
+						height: 1px;
+						background: #555;
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav-opener {
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	right: 50%;
+	transform: translateX(50%);
+	bottom: 5px;
+
+	@include media ('>=phone') {
+		right: 17px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	@include media('>=desktop') {
+		display: none;
+	}
+
+	&:before,
+	&:after,
+	span {
+		background: $black;
+		border-radius: 4px;
+		position: absolute;
+		top: 16px;
+		left:25%;
+		right:25%;
+		height:3px;
+		margin: -2px 0 0;
+		transition: all .2s linear;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		top: 10px;
+	}
+
+	&:after {
+		top: 22px;
+	}
+
+	.nav-active & {
+
+		span {
+			opacity: 0;
+		}
+
+		&:before,
+		&:after {
+			transform: rotate(45deg);
+			top: 50%;
+			left: 15%;
+			right: 15%;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
