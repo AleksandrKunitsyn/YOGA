@@ -7,14 +7,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:400,600,700" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js" defer><\/script>')</script>
 	<script src="js/jquery.main.js" defer></script>
 </head>
 <body>
 	<div id="wrapper">
 		<header class="header">
-			<div class="container">
-				<div class="header-holder">
+			<div class="header-holder">
+				<div class="container">
 					<a href="#" class="nav-opener"><span></span></a>
 					<div class="nav-drop">
 						<ul class="menu">
@@ -33,13 +33,13 @@
 			</div>
 		</header>
 		<main id="main">
-			<section class="visual-section" style="background-image: url(images/bg.jpg);">
+			<section class="visual-section" style="background-image: url(images/bg1.jpg);">
 				<div class="container">
 					<div class="form-holder">
 						<h3>Trial Class</h3>
-						<form class="form">
-							<input type="text" name="name" placeholder="Enter your name">
-							<input type="tel" name="tel" placeholder="Enter your phone">
+						<form class="form form-validation" action="#">
+							<input data-required="true" type="text" name="name" placeholder="Enter your name">
+							<input data-required="true" type="text" name="tel" placeholder="Enter your phone">
 							<div class="select-holder">
 								<div class="select">
 									<span class="fake-select">
@@ -52,10 +52,11 @@
 									</span>
 								</div>
 							</div>
+							<button type="submit" class="btn">Try It</button>
 						</form>
 					</div>
 					<div class="text-holder">
-						<h1>Just Balance your Mind & Body</h1>
+						<h1>Just Balance your Mind &amp; Body</h1>
 						<strong>Create the healthy living for yourself</strong>
 					</div>
 				</div>
@@ -68,43 +69,51 @@
 					</div>
 						<ul class="media-item">
 							<li>
-								<div class="img-holder">
-									<img src="images/img2.jpg">
-								</div>
-								<div class="text-holder">
-									<h4>Yoga For Health</h4>
-									<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-									<span>Ashtanga - Hatha</span>
-								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="images/img1.jpg">
-								</div>
-								<div class="text-holder">
-									<h4>Yoga For Health</h4>
-									<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-									<span>Ashtanga - Hatha</span>
+								<div class="col">
+									<div class="img-holder">
+										<img src="images/img2.jpg">
+									</div>
+									<div class="text-holder">
+										<h4>Yoga For Health</h4>
+										<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<span>Ashtanga - Hatha</span>
+									</div>
 								</div>
 							</li>
 							<li>
-								<div class="img-holder">
-									<img src="images/img3.jpg">
-								</div>
-								<div class="text-holder">
-									<h4>Yoga For Health</h4>
-									<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-									<span>Ashtanga - Hatha</span>
+								<div class="col">
+									<div class="img-holder">
+										<img src="images/img1.jpg">
+									</div>
+									<div class="text-holder">
+										<h4>Yoga For Health</h4>
+										<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<span>Ashtanga - Hatha</span>
+									</div>
 								</div>
 							</li>
 							<li>
-								<div class="img-holder">
-									<img src="images/img4.jpg">
+								<div class="col">
+									<div class="img-holder">
+										<img src="images/img3.jpg">
+									</div>
+									<div class="text-holder">
+										<h4>Yoga For Health</h4>
+										<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<span>Ashtanga - Hatha</span>
+									</div>
 								</div>
-								<div class="text-holder">
-									<h4>Yoga For Health</h4>
-									<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-									<span>Ashtanga - Hatha</span>
+							</li>
+							<li>
+								<div class="col">
+									<div class="img-holder">
+										<img src="images/img4.jpg">
+									</div>
+									<div class="text-holder">
+										<h4>Yoga For Health</h4>
+										<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<span>Ashtanga - Hatha</span>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -166,7 +175,7 @@
 					</li>
 					<li>
 						<div class="img-holder">
-							<img src="images/img11.jpg">
+							<img src="images/img12.jpg">
 						</div>
 						
 							<a href="#" class="overlay"><span class="search"><i class="icon-search"></i></span></a>
@@ -175,6 +184,43 @@
 				</ul>
 			</section>
 			<section class="aboutUs-section">
+				<div class="container">
+					<div class="carousel">
+						<div class="mask">
+							<div class="slideset">
+								<div class="slide">
+									<div class="text-holder">
+										<h2>About us</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
+									</div>
+									<div class="img-holder">
+										<img src="images/slider1.jpg">
+									</div>
+								</div>
+								<div class="slide">
+									<div class="text-holder">
+										<h2>About us</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
+									</div>
+									<div class="img-holder">
+										<img src="images/slider1.jpg">
+									</div>
+								</div>
+								<div class="slide">
+									<div class="text-holder">
+										<h2>About us</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
+									</div>
+									<div class="img-holder">
+										<img src="images/slider1.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn-prev"><i class="icon-chevron-left"></i></a>
+						<a href="#" class="btn-next"><i class="icon-chevron-right"></i></a>
+					</div>
+				</div>
 			</section>
 			<section class="plus-section" style="background-image: url(images/bg2.jpg);">
 				<div class="container">
@@ -309,6 +355,121 @@
 							<a href="#" class="btn">Buy now</a>
 						</div>
 					</div>
+					</div>
+				</div>
+			</section>
+			<section class="comment-section" style="background-image: url(images/bg3.png);">
+				<div class="container">
+					<div class="carousel">
+						<div class="mask">
+							<div class="slideset">
+								<div class="slide">
+									<div class="holder">
+										<div class="img-holder">
+											<img src="images/trener.jpg">
+										</div>
+										<div class="text-holder">
+											<img class="quotes1" src="images/quotes1.png">
+											<blockquote>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+												<span>Trainer</span>
+												<strong>Laura Shepard</strong>
+											</blockquote>
+											<img class="quotes2" src="images/quotes2.png">
+										</div>
+									</div>
+									<div class="next-trainer">
+										<div class="img-holder">
+											<img src="images/trener2.jpg">
+										</div>
+										<div class="trainer">
+											<strong>Laura Shepard</strong>
+											<span>Trainer</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="holder">
+										<div class="img-holder">
+											<img src="images/trener.jpg">
+										</div>
+										<div class="text-holder">
+											<img src="images/quotes1.png">
+											<blockquote>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+												<span>Trainer</span>
+												<strong>Laura Shepard</strong>
+											</blockquote>
+										</div>
+									</div>
+									<div class="next-trainer">
+										<div class="img-holder">
+											<img src="images/trener2.jpg">
+										</div>
+										<div class="trainer">
+											<strong>Laura Shepard</strong>
+											<span>Trainer</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="holder">
+										<div class="img-holder">
+											<img src="images/trener.jpg">
+										</div>
+										<div class="text-holder">
+											<blockquote>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+												<span>Trainer</span>
+												<strong>Laura Shepard</strong>
+											</blockquote>
+										</div>
+									</div>
+									<div class="next-trainer">
+										<div class="img-holder">
+											<img src="images/trener2.jpg">
+										</div>
+										<div class="trainer">
+											<strong>Laura Shepard</strong>
+											<span>Trainer</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="holder">
+										<div class="img-holder">
+											<img src="images/trener.jpg">
+										</div>
+										<div class="text-holder">
+											<blockquote>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+												<span>Trainer</span>
+												<strong>Laura Shepard</strong>
+											</blockquote>
+										</div>
+									</div>
+									<div class="next-trainer">
+										<div class="img-holder">
+											<img src="images/trener2.jpg">
+										</div>
+										<div class="trainer">
+											<strong>Laura Shepard</strong>
+											<span>Trainer</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn-prev"><i class="icon-chevron-left"></i></a>
+						<a href="#" class="btn-next"><i class="icon-chevron-right"></i></a>
+						<div class="pagination">
+							<ul>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
