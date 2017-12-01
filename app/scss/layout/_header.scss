@@ -10,7 +10,7 @@
 }
 
 .header-holder {
-	padding: 43px 0 39px;
+	padding: 37px 0 39px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -29,8 +29,9 @@
 	text-align: center;
 	color: #5363db;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 300;
 	text-transform: uppercase;
+	font-family: $base-font-serif;
 }
 
 .nav-drop {
@@ -39,7 +40,7 @@
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	top: 100%;
+	top: 40px;
 	right: 0;
 	left: 0;
 	z-index: 999;
@@ -62,8 +63,11 @@
 
 	.menu {
 		@extend %listreset;
-		margin: 0 -10px;
 
+		@include media('>=desktop') {
+			padding: 0 0 0 110px;
+		}
+		
 		li {
 			position: relative;
 			text-align: center;
@@ -86,7 +90,11 @@
 				font-size: 14px;
 				font-weight: 600;
 				line-height: 1.142857;
-				padding: 5px 0;
+				padding: 10px 0;
+
+				@include media('>=desktop') {
+					padding: 5px 0;
+				}
 
 				&:hover {
 					color: #5363db;
@@ -105,22 +113,22 @@
 			}
 		}
 	}
+
+	.right {
+		@include media('>=desktop') {
+			padding: 0 190px 0 0;
+		}
+	}
 }
 
 .nav-opener {
 	position: absolute;
-	width: 60px;
+	width: 40px;
 	height: 30px;
-	right: 50%;
-	transform: translateX(50%);
-	bottom: 5px;
-
-	@include media ('>=phone') {
-		right: 17px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-
+	right: 17px;
+	top: 50%;
+	transform: translateY(-50%);
+	
 	@include media('>=desktop') {
 		display: none;
 	}
