@@ -959,12 +959,6 @@ img {
       font-weight: 700; }
       .visual-section .form-holder .btn:hover {
         background: #475bf1; }
-  .visual-section .select-holder label {
-    padding: 10px 0 11px;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 1.142857;
-    font-weight: 400; }
   .visual-section .select-holder .select {
     position: relative;
     margin: 0 0 28px; }
@@ -997,6 +991,7 @@ img {
       font-size: 14px;
       line-height: 1.714285;
       font-weight: 400;
+      color: #888;
       background: #f2f2f2; }
     .visual-section .select-holder .select .fake-select:after {
       position: absolute;
